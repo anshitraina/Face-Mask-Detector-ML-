@@ -21,7 +21,7 @@ import numpy as np
 import os
 
 # initialize the initial learning rate, number of epochs to train for,
-# and batch size
+# and batch size.
 INIT_LR = 1e-4
 EPOCHS = 20
 BS = 32
@@ -30,7 +30,7 @@ DIRECTORY = r"C:\Mask Detection\CODE\Face-Mask-Detection-master\dataset"
 CATEGORIES = ["with_mask", "without_mask"]
 
 # grab the list of images in our dataset directory, then initialize
-# the list of data (i.e., images) and class images
+# the list of data (i.e., images) and class images.
 print("[INFO] loading images...")
 
 data = []
@@ -47,7 +47,7 @@ for category in CATEGORIES:
     	data.append(image)
     	labels.append(category)
 
-# perform one-hot encoding on the labels
+# perform one-hot encoding on the labels.
 lb = LabelBinarizer()
 labels = lb.fit_transform(labels)
 labels = to_categorical(labels)
