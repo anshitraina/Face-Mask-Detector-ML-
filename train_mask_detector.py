@@ -47,7 +47,7 @@ for category in CATEGORIES:
     	data.append(image)
     	labels.append(category)
 
-# perform one-hot encoding on the labels
+# perform one-hot encoding on the labels..
 lb = LabelBinarizer()
 labels = lb.fit_transform(labels)
 labels = to_categorical(labels)
