@@ -1,4 +1,4 @@
-#Hare Krishana Hare Ram #jai Shiv Shankar
+#Hare Krishana Hare Ram #Jai Shiv Shankar
 # import the necessary packages
 from ctypes.wintypes import PBOOL
 from tkinter import Frame
