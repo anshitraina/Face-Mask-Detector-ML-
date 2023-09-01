@@ -28,7 +28,7 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 	faces = []
 	locs = []
 	preds = []
-	#nfmdsnf
+
 
 	# loop over the detections
 	for i in range(0, detections.shape[2]):
